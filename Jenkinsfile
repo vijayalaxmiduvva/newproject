@@ -5,8 +5,8 @@ pipeline {
     stages {
        stage('Git Checkout Stage') {
            steps {
-               git creddentialId 'github', 
-           }
+               git credentialsId: 'a71391eb-198c-413c-9b96-2608f6f34351', url: 'https://github.com/vijayalaxmiduvva/newproject.git'
+           }    
        }
       
        stage('Compile Stage') {
